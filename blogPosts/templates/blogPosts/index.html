@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of Posts</title>
+</head>
+<body>
+
+{% for item in posts  %}
+    <div>
+
+        <p>{{ item.title}}</p>
+        <p>{{ item.description}}</p>
+        <p>{{ item.content}}</p>
+        <p>{{ item.created_at}}</p>
+    </div>
+
+{% endfor %}
+
+</body>
+</html>
